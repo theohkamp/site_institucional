@@ -33,7 +33,7 @@ body{
 
 .header__menu__link{
     font-family: var(--Font2);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     text-decoration: none;
     padding: 24px;
@@ -49,7 +49,7 @@ body{
 }
 
 .apresentacao__conteudo{
-    width: 615px;
+    width: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -60,8 +60,8 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 741px;
-    font-size: 36px;
+    width: 100%;
+    font-size: 2.25rem;
     font-family: var(--Font1);
 }
 
@@ -71,9 +71,10 @@ body{
 
 .apresentacao__conteudo__texto{
     display: flex;
+    width: 90%;
     flex-direction: column;
-    width: 574px;
-    font-size: 24px;
+    align-items: center;
+    font-size: 1.5rem;
     font-family: var(--Font2);
 }
 
@@ -86,7 +87,7 @@ body{
 
 .apresentacao__links__titulo{
     text-align: center;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-style: normal;
     font-weight: 400;
     font-family: var(--Font1);
@@ -98,10 +99,10 @@ body{
     gap: 16px;
     border-radius: 8px;
     border: 2px solid var(--Sec);
-    width: 378px;
+    width: 150%;
     text-align: center;
     border-radius: 16px;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     padding: 21.5px 0;
     text-decoration: none;
@@ -113,12 +114,16 @@ body{
     display: flex;
     align-items: center;
     background-color: var(--Thrd);
-    width: 500px;
+    width: 160%;
+}
+
+.apresentacao__imagem{
+    width: 50%;
 }
 
 .footer{
     font-family: var(--Font2);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
     text-align: center;
     color: var(--Prim);
@@ -131,7 +136,7 @@ body{
     flex-direction: column;
     align-items: left;
     width: 741px;
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: var(--Font1);
 }
 
@@ -141,4 +146,45 @@ body{
     align-items: center;
     justify-content: space-between;
     gap: 6%;
+}
+
+@media(max-width: 1350px) {
+    .header{
+        padding: 5%;
+    }
+
+    .header__menu{
+        gap: 40px;
+        justify-content: center;
+    }
+
+    .header__menu__link{
+        padding: 5px;
+    }
+
+    .about__main{
+        padding: 5%;
+        flex-direction: column;
+    }
+
+    .about__titulo{
+        width: auto;
+    }
+
+    .apresentacao {
+        padding: 5%;
+        flex-direction: column-reverse;
+    }
+
+    .apresentacao__conteudo{
+        width: auto;
+    }
+
+    .apresentacao__imagem{
+        width: 70%;
+    }
+
+    .imagem__about{
+        width: 100%;
+    }
 }
